@@ -26,7 +26,6 @@ class CreatePacienteTable extends Migration
             $table->string('sexo_p');
             $table->date('fechanac_p');
             $table->string('correo_p');
-            $table->string('f_consultorio');
             $table->timestamps();
         });
     }

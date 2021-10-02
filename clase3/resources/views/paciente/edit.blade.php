@@ -77,10 +77,6 @@
                             <label for="name">correo:</label>
                             <input type="email" class="form-control" required name="correo_p" value={{ $contact->correo_p }} />
                         </div>
-                        <div class="form-group">
-                            <label for="name">consultorio:</label>
-                            <input type="text" class="form-control" required name="f_consultorio" value={{ $contact->f_consultorio }} />
-                        </div>
                     <button type="submit" class="btn btn-primary btn-lg btn-block">Update</button>
         </form>
     </div>

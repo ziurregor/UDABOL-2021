@@ -23,7 +23,6 @@ class paciente extends Model
         'sexo_p',
         'fechanac_p',
         'correo_p',
-        'f_consultorio',
         'created_ad',
         'updated_ad'
     ];

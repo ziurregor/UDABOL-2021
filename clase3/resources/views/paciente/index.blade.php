@@ -21,7 +21,6 @@
           <td>Sexo</td>
           <td>Fecha de Nacimiento</td>
           <td>Correo</td>
-          <td>Consultorio</td>
           <td colspan = 2>Actions</td>
         </tr>
     </thead>
@@ -39,7 +38,6 @@
             <td>{{$contact->sexo_p}}</td>
             <td>{{$contact->fechanac_p}}</td>
             <td>{{$contact->correo_p}}</td>
-            <td>{{$contact->f_consultorio}}</td>
             <div class="btn-group">
             <td>
                 <a href="{{ route('paciente.edit',$contact->id_p)}}" class="btn btn-success">M</a>

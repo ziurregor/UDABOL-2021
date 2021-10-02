@@ -32,7 +32,6 @@ class pacienteController extends Controller
             'sexo_p' => $request->get('sexo_p'),
             'fechanac_p' => $request->get('fechanac_p'),
             'correo_p' => $request->get('correo_p'),
-            'f_consultorio' => $request->get('f_consultorio'),
         ]);
         $contact->save();
         return redirect('/paciente')->with('success', 'Paciente saved!');
@@ -57,7 +56,6 @@ class pacienteController extends Controller
         $contact->sexo_p = $request->get('sexo_p');
         $contact->fechanac_p =  $request->get('fechanac_p');
         $contact->correo_p = $request->get('correo_p');
-        $contact->f_consultorio =  $request->get('f_consultorio');
         $contact->save();
 
         return redirect('/paciente')->with('success', 'Paciente updated!');

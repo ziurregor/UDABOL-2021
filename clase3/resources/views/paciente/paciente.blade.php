@@ -72,11 +72,6 @@
               <label for="name">correo:</label>
               <input type="email" class="form-control" required name="correo_p"/>
           </div>
-          <div class="form-group">
-              <label for="name">consultorio:</label>
-              <input type="text" class="form-control" required name="f_consultorio"/>
-          </div>
-
         <button type="submit" class="btn btn-primary btn-lg btn-block">Registrar</button>
       </form>
   </div>
