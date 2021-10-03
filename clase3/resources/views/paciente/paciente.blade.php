@@ -21,7 +21,7 @@
               <input type="number" class="form-control" required name="ci_p"/>
           </div>
           <div class="form-group">
-              <label for="name">Nombre:</label>
+              <label for="name">Nombres:</label>
               <input type="text" class="form-control" required name="nombre_p"/>
           </div>
           <div class="form-group">
@@ -69,7 +69,7 @@
               <input type="date" class="form-control" required name="fechanac_p"/>
           </div>
           <div class="form-group">
-              <label for="name">correo:</label>
+              <label for="name">Correo Electronico:</label>
               <input type="email" class="form-control" required name="correo_p"/>
           </div>
         <button type="submit" class="btn btn-primary btn-lg btn-block">Registrar</button>
