@@ -9,6 +9,7 @@ class pacienteController extends Controller
 {
     public function index(Request $request)
     {
+        // buscador
         $nombres= $request->nombre;
         $apellidos= $request->apellido;
         $ci= $request->ci;

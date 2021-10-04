@@ -9,14 +9,14 @@
                 </div>
 
                 <div class="row-12">
-                    <nav class="navbar navbar-light float-right">
-                        <form class="form-inline">
-                          <input name="nombre"  class="form-control mr-sm-2" type="search" placeholder="buscar por nombre " aria-label="Search">
-                          <input name="apellido"  class="form-control mr-sm-2" type="search" placeholder="buscar por apellido " aria-label="Search">
-                          <input name="ci"  class="form-control mr-sm-2" type="search" placeholder="buscar por Ci " aria-label="Search">
-                          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                        </form>
-                      </nav>
+                        <nav class="navbar navbar-light float-right">
+                            <form class="form-inline">
+                                <input name="nombre"  class="form-control mr-sm-2" type="search" placeholder="buscar por nombre " aria-label="Search">
+                                <input name="apellido"  class="form-control mr-sm-2" type="search" placeholder="buscar por apellido " aria-label="Search">
+                                <input name="ci"  class="form-control mr-sm-2" type="search" placeholder="buscar por Ci " aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                            </form>
+                        </nav>
                       <div class="content-body">
                         <table class="table table-striped">
                             <thead>
@@ -60,17 +60,13 @@
                                         <button class="btn btn-danger" type="submit">X</button>
                                         </form>
                                     </td>
-                                    </div>
                                 </tr>
                                 @endforeach
                             </tbody>
                         </table>
-
                       </div>
                      <center> {{$contacts->render()}}</center>
-                    
                 </div>
-
         </div>
     </div>
 

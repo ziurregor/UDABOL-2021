@@ -38,6 +38,8 @@
                           <label for="name">Telefono:</label>
                           <input onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" type="text" maxlength="8" class="form-control" required name="telefono_p"/>
                       </div>
+                      <button type="submit" class="btn btn-primary btn-lg btn-block">Registrar</button>
+
                   </div>
                   <div class="col">
                     <div class="form-group">
@@ -76,9 +78,8 @@
                         <label for="name">correo:</label>
                         <input type="email" class="form-control" required name="correo_p"/>
                     </div>
+                    <a href="{{route('paciente.index')}}" class="btn btn-secondary btn-lg btn-block">Cancelar</a>
                 </div>
-
-              <button type="submit" class="btn btn-primary btn-lg btn-block">Registrar</button>
             </form>
         </div>
       </div>
