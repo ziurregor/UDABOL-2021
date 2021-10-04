@@ -7,12 +7,17 @@ use Illuminate\Http\Request;
 
 class pacienteController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $contacts = paciente::all();
+        $nombres= $request->nombre;
+        $apellidos= $request->apellido;
+        $ci= $request->ci;
+        
+        $contacts=paciente::nombre($nombres)->apellidos($apellidos)->ci($ci)->simplePaginate(4);
 
         return view('paciente.index', compact('contacts'));
     }
+ 
     public function create()
     {
         return view('paciente.paciente');
