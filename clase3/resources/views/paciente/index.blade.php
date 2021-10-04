@@ -2,29 +2,42 @@
 @section('content')
  <!-- Scripts -->
  <script src="{{ asset('js/app.js') }}" defer></script>
- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+ <script  type="text/javascript">
+          function ConfirmDelete()
+          {
+            var respuesta = confirm("Estas Seguro de Elimar el Usuario?");
+            if (respuesta == true)
+            {
+              return true;
+            }
+            else
+            {
+              return false;
+            }
+          }
+</script>
+ 
 <!-- Fonts -->
 <link rel="dns-prefetch" href="//fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 <!-- Styles -->
+
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-<link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <div class="container">
 <div class="row">
 <div class="col-sm-14">
-        <center><h1 style="text-align: center;padding: 15px;color: green;">LISTA DE PACIENTES</h1></center>
+        <center><h1 style="text-align: center;padding: 15px;color: black; font-weight:bold;">LISTA DE PACIENTES</h1></center>
     <div>
-        <a style="margin: 19px;" href="{{ route('paciente.create')}}" class="btn btn-outline-success">Nuevo Registro</a>
+        <a style="margin: 19px;" href="{{ route('paciente.create')}}" class="btn btn-primary"><i style="font-size:20px;" class="bi bi-person-plus-fill"></i> Nuevo Registro</a>
     </div>
    <table class="table table-responsive table-hover table-fixed">
     <thead class="">
         <tr>
           <td>ID</td>
           <td>CI</td>
-          <td>Nombre</td>
+          <td>Nombres</td>
           <td>Apellidos</td>
           <td>Edad</td>
           <td>Telefono</td>
@@ -52,16 +65,15 @@
             <td>{{$contact->correo_p}}</td>
             <div class="btn-group">
             <td>
-            <a href="{{ route('paciente.edit',$contact->id_p)}}" class="btn btn-success">Editar</a>
+            <a href="{{ route('paciente.edit',$contact->id_p)}}"><i style="font-size:25px; color:black;" class="bi bi-pencil-square"></i></a>
             </td>
             <td>
                 <form action="{{ route('paciente.destroy', $contact->id_p)}}" method="post">
                   @csrf
                   @method('DELETE')
-                  <button class="btn btn-danger" type="submit"><i class="bi bi-pencil-square"></i>Eliminar</button>
+                  <button style="border:none;" onclick="return ConfirmDelete()"><i style="font-size:25px;" class="bi bi-trash-fill"></i></button>
                 </form>
             </td>
-            <i class="bi bi-bank2"></i>
             </div>
         </tr>
         @endforeach

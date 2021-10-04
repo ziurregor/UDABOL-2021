@@ -22,16 +22,16 @@
 
                 <div class="form-group">
                         <div class="form-group">
-                            <label for="name">CI:</label>
-                            <input type="number" class="form-control" required name="ci_p"value={{ $contact->ci_p }} />
-                        </div>
-                        <div class="form-group">
                             <label for="name">Nombre:</label>
                             <input type="text" class="form-control" required name="nombre_p" value={{ $contact->nombre_p }} />
                         </div>
                         <div class="form-group">
                             <label for="name">Apellidos:</label>
                             <input type="text" class="form-control" required name="apellidos_p" value={{ $contact->apellidos_p }} />
+                        </div>
+                        <div class="form-group">
+                            <label for="name">CI:</label>
+                            <input type="number" class="form-control" required name="ci_p"value={{ $contact->ci_p }} />
                         </div>
                         <div class="form-group">
                             <label for="name">Edad:</label>
@@ -48,7 +48,6 @@
                         <div class="form-group">
                             <label for="nivel_acceso">Departamento:</label>
                             <select class="form-control" id="nivel_acceso" name="departamento_p"  value={{ $contact->departamento_p }}   />
-                                <option value="">Seleccione un departamento</option>
                                 <option value="Beni">Beni</option>
                                 <option value="Chuquisaca"> Chuquisaca</option>
                                 <option value="Cochabamba">Cochabamba</option>
@@ -62,11 +61,10 @@
                         </div>
                         <div class="form-group">
                             <label for="nivel_acceso">Sexo:</label>
-                            <select class="form-control" id="nivel_acceso" name="sexo_p"  value={{ $contact->sexo_p }}  />
-                                <option value="">Seleccione un sexo</option>
+                            <select class="form-control" id="nivel_acceso" name="sexo_p"  value={{ $contact->sexo_p }}  />   
                                 <option value="Masculino">Masculino</option>
                                 <option value="Femenino"> Femenino</option>
-                                <option value="otros">otros</option>
+                                <option value="otros">Otros</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -74,10 +72,11 @@
                             <input type="date" class="form-control" required name="fechanac_p" value={{ $contact->fechanac_p }} />
                         </div>
                         <div class="form-group">
-                            <label for="name">correo:</label>
+                            <label for="name">Correo Electronico:</label>
                             <input type="email" class="form-control" required name="correo_p" value={{ $contact->correo_p }} />
                         </div>
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">Update</button>
+                    <a href="{{ route('paciente.index',$contact->id_p)}}" class="btn btn-secondary">Cancelar</a>
+                    <button type="submit" class="btn btn-primary">Actualizar</button>
         </form>
     </div>
 </div>

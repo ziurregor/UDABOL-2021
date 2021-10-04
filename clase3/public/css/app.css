@@ -2093,7 +2093,9 @@ textarea.form-control {
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .form-text {
