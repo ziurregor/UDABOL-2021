@@ -34,7 +34,7 @@
           </div>
           <div class="form-group">
               <label for="name">Telefono:</label>
-              <input type="text" class="form-control" required name="telefono_p"/>
+              <input type="number" class="form-control" required name="telefono_p"/>
           </div>
           <div class="form-group">
               <label for="name">Direccion:</label>
