@@ -19,7 +19,7 @@ class Asistente extends Model
         'apellidos',
         'correo',
         'celular',
-        'fecha_nacimiento'
+        'condicion'
     ];
 
     protected $guarded = [
