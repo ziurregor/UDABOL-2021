@@ -1,4 +1,4 @@
 @extends('layouts.asistente')
 @section('contenido')
-<h3>Index</h3>
+<h3>Create</h3>
 @stop
