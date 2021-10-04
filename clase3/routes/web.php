@@ -17,15 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::resource('user', 'App\Http\Controllers\UserController');
+Route::resource('registros/asistente','asistenteController');
 
 Route::resource('user', 'App\Http\Controllers\UserController',
                 ['only' => ['index', 'store', 'update', 'destroy', 'show']]);
 
-Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
