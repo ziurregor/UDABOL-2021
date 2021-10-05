@@ -1,10 +1,11 @@
 @extends('layouts.app')
 @section('content')
+<center>
 <div class="container">
 <div class="row">
     <div class="col-sm-8 offset-sm-2">
          <center><h1 style="text-align: center;padding: 15px;color: black; font-weight: bold;">ACTUALIZAR DATOS </h1></center>
-
+    <div>
         @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
@@ -12,16 +13,16 @@
                 <li>{{ $error }}</li>
                 @endforeach
             </ul>
-        </div>
+        </div> <br>
         <br />
         @endif
         <form method="post" action="{{ route('paciente.update', $contact->id_p) }}">
             @method('PATCH')
             @csrf
-            <div>
-            <div class="form-group">
-
-                <div class="form-group">
+          
+            <div class="row">
+            <div class="col"> 
+                
                         <div class="form-group">
                             <label for="name">Nombre:</label>
                             <input onkeypress="return (event.charCode == 209 || event.charCode == 32 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"
@@ -44,6 +45,12 @@
                             <label for="name">Telefono:</label>
                             <input onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" type="text" maxlength="8" class="form-control" required name="telefono_p" value={{ $contact->telefono_p }} />
                         </div>
+                        
+
+                        <a href="{{ route('paciente.index')}}" class="btn btn-secondary btn-lg badge-block">Cancelar</a>
+                        </div>
+
+                        <div class="col">
                         <div class="form-group">
                             <label for="name">Direccion:</label>
                             <input type="text" class="form-control" required name="direccion_p" value={{ $contact->direccion_p }} />
@@ -79,9 +86,17 @@
                             <label for="name">Correo Electronico:</label>
                             <input type="email" class="form-control" required name="correo_p" value={{ $contact->correo_p }} />
                         </div>
-                        <a style="margin-left:206px;" href="{{ route('paciente.index')}}" class="btn btn-secondary">Cancelar</a>
-                    <button style="margin-left:36px;" type="submit" class="btn btn-primary">Actualizar</button>
-        </form>
-    </div>
+                        <label for="name"></label>
+                    <button style="margin-left: 8px;" type="submit" class="btn btn-primary btn-lg badge-block">Actualizar</button>
+                        </div>
+                  </form>
+                  </div> 
+            </div>
+       </div>
 </div>
+
 @endsection
+
+
+
+
