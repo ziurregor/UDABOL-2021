@@ -27,20 +27,16 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <div class="container">
 <div class="row">
-<div class="col-sm-12">
-        <center><h1 style="text-align: center;padding: 15px;color: green;">LISTA DE PACIENTES 	&#128203;</h1></center>
+<div class="col-sm-14">
     <div>
-        <a style="margin: 19px;" href="{{ route('paciente.create')}}" class="btn btn-outline-success">Registrar nuevo paciente</a>
        <!-- <a style="margin: 19px;" href="{{ route('descargarPDF')}}" class="btn btn-outline-danger">
         Reporte
         </a> -->
-        <a style="margin: 19px;" href="{{ route('descargarPDFPacientes')}}" class="btn btn-outline-danger">
-        Generar Reporte
-        </a>
 <div class="col-sm-14">
         <center><h1 style="text-align: center;padding: 15px;color: black; font-weight:bold;">LISTA DE PACIENTES</h1></center>
     <div>
         <a style="margin: 19px;" href="{{ route('paciente.create')}}" class="btn btn-primary"><i style="font-size:20px;" class="bi bi-person-plus-fill"></i> Nuevo Registro</a>
+        <a style="margin: 19px;" href="{{ route('descargarPDFPacientes')}}" class="btn btn-danger"><i style="font-size:20px;" class="bi bi-bar-chart-line"></i> Generar Reporte</a>
     </div>
     <div class="row-12">
                         <nav class="navbar navbar-light float-right">
@@ -55,18 +51,18 @@
    <table class="table table-responsive table-hover table-fixed">
     <thead class="">
         <tr>
-          <td>ID</td>
-          <td>CI</td>
-          <td>Nombres</td>
-          <td>Apellidos</td>
-          <td>Edad</td>
-          <td>Telefono</td>
-          <td>Direccion</td>
-          <td>Departamento</td>
-          <td>Sexo</td>
-          <td>Fecha de Nacimiento</td>
-          <td>Correo</td>
-          <td colspan = 2>Operaciones</td>
+          <td style="font-weight:bold;">ID</td>
+          <td style="font-weight:bold;">CI</td>
+          <td style="font-weight:bold;">Nombres</td>
+          <td style="font-weight:bold;">Apellidos</td>
+          <td style="font-weight:bold;">Edad</td>
+          <td style="font-weight:bold;">Telefono</td>
+          <td style="font-weight:bold;">Direccion</td>
+          <td style="font-weight:bold;">Departamento</td>
+          <td style="font-weight:bold;">Sexo</td>
+          <td style="font-weight:bold;">Fecha de Nacimiento</td>
+          <td style="font-weight:bold;">Correo</td>
+          <td style="font-weight:bold;" colspan = 2>Operaciones</td>
         </tr>
     </thead>
     <tbody>
