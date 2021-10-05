@@ -75,6 +75,7 @@
             <div class="form-group">
                 <label style="color:red; font-weight:bold;"for="name">Campos Obligatorios Marcados con (*)</label>
             </div>
+            <a href="{{route('paciente.index')}}" class="btn btn-secondary btn-lg btn-block">Cancelar</a>
           <button type="submit" class="btn btn-primary btn-lg btn-block">Registrar</button>
         </form>
   </div>
