@@ -12,6 +12,6 @@
     @yield('main')
   </div>
   <script src="{{ asset('js/app.js') }}" type="text/js"></script>
-  script type="text/javascript" src="responsive-tables.js"></script>
+  <script type="text/javascript" src="responsive-tables.js"></script>
 </body>
 </html>

@@ -26,4 +26,23 @@ class paciente extends Model
         'created_ad',
         'updated_ad'
     ];
+
+    public function scopeNombre($query,$nombres){
+        if($nombres){
+            return $query->where('nombre_p','like',"%$nombres%");
+        }
+
+    }
+    public function scopeApellidos($query,$apellidos){
+        if($apellidos){
+            return $query->where('apellidos_p','like',"%$apellidos%");
+        }
+
+    }
+    public function scopeCi($query,$ci){
+        if($ci){
+            return $query->where('ci_p','like',"%$ci%");
+        }
+
+    }
 }

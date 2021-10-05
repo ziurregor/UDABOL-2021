@@ -2093,7 +2093,9 @@ textarea.form-control {
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .form-text {
@@ -2727,11 +2729,12 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-success {
-  color: #38c172;
+  color: #fafafa;
+  background-color: #076DE7;
   border-color: #38c172;
 }
 .btn-outline-success:hover {
-  color: #fff;
+  color: rgb(255, 255, 255);
   background-color: #38c172;
   border-color: #38c172;
 }
