@@ -14,10 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/auth/login');
 });
 
 Route::resource('registros/asistente','App\Http\Controllers\asistenteController');
+
+Route::get('/logout', 'App\Http\Controllers\Auth\LoginController@logout')->name('logout' );
 
 // Route::resource('user', 'App\Http\Controllers\UserController');
 
