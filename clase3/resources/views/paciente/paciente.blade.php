@@ -43,8 +43,8 @@
                       <label style=" color: red; font-weight: bold; margin-left:35px;" for="name">Campos Obligatorios Marcados con (*)</label>
 
                       <a href="{{route('paciente.index')}}" class="btn btn-secondary btn-lg btn-block">Cancelar</a>
-
                   </div>
+                  
                   <div class="col">
                     <div class="form-group">
                         <label for="name">Direccion: *</label>
