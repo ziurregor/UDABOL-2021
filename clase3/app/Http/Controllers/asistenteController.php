@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
-use App\Asistente;
+use App\Models\Asistente;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Requests\asistenteFormRequest;
 use DB;
@@ -34,6 +34,7 @@ class asistenteController extends Controller
     public function store(asistenteFormRequest $request)
     {
          $asistente=new Asistente;
+         $asistente->ci=$request->get('ci'); 
          $asistente->nombre=$request->get('nombre');  
          $asistente->apellidos=$request->get('apellidos');  
          $asistente->correo=$request->get('correo');  

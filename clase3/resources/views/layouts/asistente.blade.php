@@ -9,7 +9,7 @@
     <!-- Bootstrap 3.3.5 -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/font-awesome.css')}}">
+    <link rel="stylesheet" href="{{asset('css/font-awesome.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('css/AdminLTE.min.css')}}">
     <!-- AdminLTE Skins. Choose a skin from the css/skins

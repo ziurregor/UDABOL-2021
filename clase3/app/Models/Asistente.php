@@ -12,7 +12,7 @@ class Asistente extends Model
 
     protected $primaryKey='ci';
 
-    public $timestamps=true;
+    public $timestamps=false;
 
     protected $fillable = [
         'nombre',
