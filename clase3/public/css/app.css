@@ -73,8 +73,10 @@ body {
     line-height: 1.6;
     color: #ffffff;
     text-align: left;
-    background-image: url("https://websystemperu.com/web/121728f/sistema-de-citas-medicas.jpg");
+    background-image: url("https://i0.wp.com/criptotendencia.com/wp-content/uploads/2019/04/Blockchain-Salud-Elev8.jpg?fit=1920%2C1080&ssl=1");
     background-repeat: no-repeat;
+    background-size: 100% 225%;
+    background-color: transparent;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -4746,11 +4748,13 @@ input[type=button].btn-block {
 
 .card {
     position: relative;
+    top: 130px;
+    left: 2px;
     display: flex;
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #686d7694;
+    background-color: #52535594;
     background-clip: border-box;
     border: 1px solid rgba(53, 51, 51, 0.26);
     border-radius: 0.25rem;

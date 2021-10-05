@@ -24,10 +24,11 @@ class asistenteFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombre'=>'required|max:50|alpha',
+            'ci'=>'numeric|required|min:1000000|max:9999999999',
+            'nombre'=>'required|max:50|regex:/^[\pL\s\-]+$/u',
             'apellidos'=>'required|max:200|regex:/^[\pL\s\-]+$/u',
             'correo'=>'required|max:200',
-            'celular'=>'numeric|required|min:100000|max:99999999'        
+            'celular'=>'numeric|required|min:44000000|max:99999999'        
         ];
     }
 }

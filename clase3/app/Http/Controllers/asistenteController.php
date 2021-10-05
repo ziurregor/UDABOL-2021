@@ -41,7 +41,7 @@ class asistenteController extends Controller
          $asistente->celular=$request->get('celular');
          $asistente->condicion='1';
          $asistente->save();
-         return Redirect::to('registros/asistente');   
+         return Redirect::to('registros/asistente')->with('Mensaje','Asistente agregado con éxito!!');   
     }
     public function show($id)
     {
@@ -53,19 +53,27 @@ class asistenteController extends Controller
     }
     public function update(asistenteFormRequest $request,$id)
     {
+        $this->validate($request, [
+            'ci'=>'numeric|required|unique:asistente,ci,'. $id.',ci|min:1000000|max:9999999999',
+            'nombre'=>'required|max:50|regex:/^[\pL\s\-]+$/u',
+            'apellidos'=>'required|max:200|regex:/^[\pL\s\-]+$/u',
+            'correo'=>'required|max:200',
+            'celular'=>'numeric|required|min:44000000|max:99999999',    
+        ]);  
         $asistente=Asistente::findOrFail($id);
+        $asistente->ci=$request->get('ci'); 
         $asistente->nombre=$request->get('nombre');  
         $asistente->apellidos=$request->get('apellidos');  
         $asistente->correo=$request->get('correo');   
         $asistente->celular=$request->get('celular');  
         $asistente->update(); 
-        return Redirect::to('registros/asistente');
+        return Redirect::to('registros/asistente')->with('Mensaje','Asistente modificado con éxito!!');
     }
     public function destroy($id)
     {
         $asistente=Asistente::findOrFail($id);
         $asistente->condicion='0'; 
         $asistente->update(); 
-        return Redirect::to('registros/asistente');
+        return Redirect::to('registros/asistente')->with('Mensaje','Asistente eliminado con éxito!!');
     }
 }

@@ -1,5 +1,10 @@
 @extends('layouts.asistente')
 @section ('contenido')
+@if(Session::has('Mensaje'))
+<div class="alert alert-warning fade in" role="alert">
+    {{Session::get('Mensaje')}}<a href="" class="close" aria-label="close">&times;</a>
+</div>
+@endif
 <div class="row">
 	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 		<h3> <i class="fa fa-users"></i> Listado de Asistentes <a href="asistente/create"><button class="btn btn-success"><i class="fa fa-user-plus"></i></button></a></h3>
