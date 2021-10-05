@@ -8,7 +8,7 @@ role="dialog" tabindex="-1" id="modal-delete-{{$asis->ci}}">
 				aria-label="Close">
                      <span aria-hidden="true">×</span>
                 </button>
-                <h4 class="modal-title">Eliminar Asistente</h4>
+                <h4 class="modal-title"><i class="fa fa-exclamation-triangle text-danger"> ¿Eliminar Asistente?</i> </h4>
 			</div>
 			<div class="modal-body">
 				<p>Confirme si desea eliminar el Asistente : {{ $asis->ci}}</p>

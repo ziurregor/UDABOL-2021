@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sistema</title>
+    <title>Citas Médicas</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -25,11 +25,11 @@
       <header class="main-header">
 
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>C.</b>M.</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>Citas Médicas</b></span>
+          <span class="logo-lg"><b>Citas Médicas <i class="fa fa-file-text"></i> </b></span>
         </a>
 
         <!-- Header Navbar: style can be found in header.less -->
@@ -45,9 +45,9 @@
               
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
                   
-                  <span class="hidden-xs"> {{ Auth::user()->name }}</span>
+                  <span class="hidden-xs"> <i class="fa fa-hospital-o"></i>  {{ Auth::user()->name }}</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
@@ -144,7 +144,7 @@
       <!--Fin-Contenido-->
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
-          <b>Version</b> 2.3.0
+          <b>Laravel</b> 8
         </div>
         <strong>Copyright &copy; 2021.</strong> Derechos Reservados.
       </footer>

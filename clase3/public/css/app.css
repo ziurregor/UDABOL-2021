@@ -71,7 +71,7 @@ body {
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 1.6;
-    color: #212529;
+    color: #ffffff;
     text-align: left;
     background-image: url("https://websystemperu.com/web/121728f/sistema-de-citas-medicas.jpg");
     background-repeat: no-repeat;
@@ -3099,7 +3099,7 @@ fieldset:disabled a.btn {
 
 .btn-link {
     font-weight: 400;
-    color: #3490dc;
+    color: #fafdff;
     text-decoration: none;
 }
 
@@ -4652,7 +4652,7 @@ input[type=button].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgb(252, 249, 249);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -4750,9 +4750,9 @@ input[type=button].btn-block {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: #686d7694;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: 1px solid rgba(53, 51, 51, 0.26);
     border-radius: 0.25rem;
 }
 
@@ -6819,7 +6819,7 @@ button.bg-dark:focus {
 }
 
 .bg-white {
-    background-color: #fff !important;
+    background-color: #2994ff !important;
 }
 
 .bg-transparent {

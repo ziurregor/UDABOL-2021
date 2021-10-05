@@ -2,7 +2,7 @@
 @section ('contenido')
 <div class="row">
 	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-		<h3>Listado de Asistentes <a href="asistente/create"><button class="btn btn-success">Nuevo</button></a></h3>
+		<h3> <i class="fa fa-users"></i> Listado de Asistentes <a href="asistente/create"><button class="btn btn-success"><i class="fa fa-user-plus"></i></button></a></h3>
 		@include('registros.asistente.search')
 	</div>
 </div>
@@ -27,8 +27,8 @@
                     <td>{{ $asis->correo}}</td>
 					<td>{{ $asis->celular}}</td>
 					<td>
-						<a href="{{URL::action('App\Http\Controllers\asistenteController@edit',$asis->ci)}}"><button class="btn btn-info">Editar</button></a>
-                        <a href="" data-target="#modal-delete-{{$asis->ci}}" data-toggle="modal"><button class="btn btn-danger">Eliminar</button></a>
+						<a href="{{URL::action('App\Http\Controllers\asistenteController@edit',$asis->ci)}}"><button class="btn btn-info"> <i class="fa fa-edit"></i> </button></a>
+                        <a href="" data-target="#modal-delete-{{$asis->ci}}" data-toggle="modal"><button class="btn btn-danger"> <i class="fa fa-trash"></i> </button></a>
 					</td>
 				</tr>
 				@include('registros.asistente.modal')
