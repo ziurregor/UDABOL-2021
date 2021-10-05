@@ -3,9 +3,15 @@
 <div class="container">
 <div class="row">
 <div class="col-sm-12">
-        <center><h1 style="text-align: center;padding: 15px;color: green;">LISTA DE PACIENTES</h1></center>
+        <center><h1 style="text-align: center;padding: 15px;color: green;">LISTA DE PACIENTES 	&#128203;</h1></center>
     <div>
-        <a style="margin: 19px;" href="{{ route('paciente.create')}}" class="btn btn-outline-success">New nuevo</a>
+        <a style="margin: 19px;" href="{{ route('paciente.create')}}" class="btn btn-outline-success">Registrar nuevo paciente</a>
+       <!-- <a style="margin: 19px;" href="{{ route('descargarPDF')}}" class="btn btn-outline-danger">
+        Reporte
+        </a> -->
+        <a style="margin: 19px;" href="{{ route('descargarPDFPacientes')}}" class="btn btn-outline-danger">
+        Generar Reporte
+        </a>
     </div>
    <table class="table table-responsive table-hover table-fixed">
     <thead class="">
