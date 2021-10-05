@@ -27,7 +27,6 @@ Route::get('/pdf', 'App\Http\Controllers\PDFController@PDF')->name('descargarPDF
 
 Route::get('/pdfpacientes', 'App\Http\Controllers\PDFController@PDFPacientes')->name('descargarPDFPacientes');
 
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

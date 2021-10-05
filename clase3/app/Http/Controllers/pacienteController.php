@@ -23,6 +23,11 @@ class pacienteController extends Controller
     {
         return view('paciente.paciente');
     }
+    public function show($id)
+    {
+        $contact = paciente::find($id);
+        return view('paciente.show', compact('contact'));
+    }
     public function store(Request $request)
     {
         $request->validate([]);

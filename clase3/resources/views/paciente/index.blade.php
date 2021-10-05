@@ -1,22 +1,6 @@
 @extends('layouts.app')
 @section('content')
- <!-- Scripts -->
- <script src="{{ asset('js/app.js') }}" defer></script>
- <script  type="text/javascript">
-          function ConfirmDelete()
-          {
-            var respuesta = confirm("Estas Seguro de Elimar el Usuario?");
-            if (respuesta == true)
-            {
-              return true;
-            }
-            else
-            {
-              return false;
-            }
-          }
-</script>
- 
+
 <!-- Fonts -->
 <link rel="dns-prefetch" href="//fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -81,7 +65,7 @@
             <td>{{$contact->correo_p}}</td>
             <div class="btn-group">
             <td>
-            <a href="{{ route('paciente.edit',$contact->id_p)}}"><i style="font-size:25px; color:black;" class="bi bi-pencil-square"></i></a>
+              <a href="{{ route('paciente.edit',$contact->id_p)}}"><i style="font-size:25px; color:black;" class="bi bi-pencil-square"></i></a>
             </td>
             <td>
                 <form action="{{ route('paciente.destroy', $contact->id_p)}}" method="post">
@@ -94,4 +78,22 @@
         </tr>
         @endforeach
     </tbody>
+    {{ $contacts->links() }}
 @endsection
+ <!-- Scripts -->
+ <script src="{{ asset('js/app.js') }}" defer></script>
+ <script  type="text/javascript">
+          function ConfirmDelete()
+          {
+            var respuesta = confirm("Estas Seguro de Elimar el Usuario?");
+            if (respuesta == true)
+            {
+              return true;
+            }
+            else
+            {
+              return false;
+            }
+          }
+</script>
+ 
