@@ -52,7 +52,7 @@
                     </div>
                     <div class="form-group">
                           <label for="nivel_acceso">Departamento: *</label>
-                          <select class="form-control" id="nivel_acceso" name="departamento_p">
+                          <select class="form-control" id="nivel_acceso" name="departamento_p" required>
                               <option value="">Seleccione un departamento</option>
                               <option value="Beni">Beni</option>
                               <option value="Chuquisaca"> Chuquisaca</option>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="form-group">
                           <label for="nivel_acceso">Sexo: *</label>
-                          <select class="form-control" id="nivel_acceso" name="sexo_p">
+                          <select class="form-control" id="nivel_acceso" name="sexo_p" required>
                               <option value="">Seleccione un sexo</option>
                               <option value="Masculino">Masculino</option>
                               <option value="Femenino"> Femenino</option>
